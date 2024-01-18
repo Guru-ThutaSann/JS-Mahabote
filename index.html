@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabote Calculator</title>
+    <script src="js/Mahabote.js"></script>
+</head>
+<body>
+
+<h1>Mahabote Calculator</h1>
+
+<form id="dateForm">
+    <label for="selectedDate">Select a date:</label>
+    <input type="date" id="selectedDate" required>
+    <button type="button" onclick="calculateMahabote()">Calculate</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+    function calculateMahabote() {
+        try {
+            const selectedDateInput = document.getElementById('selectedDate');
+            const selectedDate = new Date(selectedDateInput.value);
+
+            // Extract date components
+            const year = selectedDate.getFullYear();
+            const month = selectedDate.getMonth() + 1; // Months are 0-indexed
+            const day = selectedDate.getDate();
+            const hour = selectedDate.getHours();
+            const minute = selectedDate.getMinutes();
+            const second = selectedDate.getSeconds();
+
+            // Create Mahabote instance
+            const mahaboteInstance = new Mahabote(year, month, day, hour, minute, second);
+
+            // Get Mahabote details and display the result
+            const resultElement = document.getElementById('result');
+			// Change to the method you want to display
+            resultElement.textContent = mahaboteInstance.getHouse(); 
+        } catch (error) {
+            console.error('Error calculating Mahabote:', error);
+        }
+    }
+</script>
+
+</body>
+</html>
+
