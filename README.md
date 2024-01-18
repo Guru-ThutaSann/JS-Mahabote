@@ -3,16 +3,15 @@ Here is an explanation of how to calculate the Mahabote, an ancient astrology sy
 
 # The following features can be used in Mahabote v1.0.0:
 
-(1) Calculation of Julian Date<br>
-(2) Calculation of Myanmar Year<br>
-(3) Calculation of Mahabote Modulo<br>
-(4) Getting Weekday Number<br>
-(5) Getting Weekday Myanmar Name<br>
-(6) Getting Mahabote House Name<br>
+- Calculation of Julian Date
+- Calculation of Myanmar Year
+- Calculation of Mahabote Modulo
+- Getting Weekday Number
+- Getting Weekday Myanmar Name
+- Getting Mahabote House Name
 
 # How to use:
-Clone the repository <br>
-Double and open index.html
+Clone the repository and then double-click to open index.html.
 
 # Usage:
 ````javascript
