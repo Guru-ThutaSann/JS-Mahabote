@@ -42,3 +42,9 @@ console.log(`Weekday Number: ${weekdayNumber}`);
 const weekdayName = mahabote.getDayString();
 console.log(`Weekday Myanmar Name: ${weekdayName}`);
 ````
+
+#Author
+- [@Guru-ThutaSann](https://github.com/Guru-ThutaSann/)
+
+# License
+[Apache License 2.0](LICENSE)
